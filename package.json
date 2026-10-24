@@ -1,0 +1,17 @@
+{
+  "name": "pulse-api-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/index.js",
+    "dev:ui": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node --test",
+    "prompts": "node scripts/generate-prompts.js"
+  },
+  "dependencies": { "express": "^5.1.0", "pino": "^9.6.0", "react": "^19.0.0", "react-dom": "^19.0.0" },
+  "devDependencies": { "vite": "^6.1.0", "docx": "^9.5.0" }
+}

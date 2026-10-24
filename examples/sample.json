@@ -1,0 +1,6 @@
+[
+  { "api_name": "Payments API", "response_time_ms": 4820, "status_code": 503, "records_returned": 0 },
+  { "api_name": "Inventory API", "response_time_ms": 3250, "status_code": 200, "records_returned": 142 },
+  { "api_name": "Customers API", "response_time_ms": 185, "status_code": 200, "records_returned": null },
+  { "api_name": "Orders API", "response_time_ms": 242, "status_code": 200, "records_returned": 36 }
+]
