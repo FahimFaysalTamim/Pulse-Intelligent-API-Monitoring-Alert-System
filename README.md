@@ -208,19 +208,6 @@ This is a single-process demo. SQLite operations are synchronous and the queue l
 
 For production: move ingestion to durable jobs with batch IDs, add idempotency keys and observed timestamps, use distributed per-API ordering, PostgreSQL and appropriate locks, retries with backoff, authentication, and operational metrics. Tune policies per endpoint (some legitimately return zero records). Do not expose the local demo publicly without access controls.
 
-## Submission checklist — deadline October 25, 2026
-
-- [x] Review the original assignment PDF and verify its PatientDataAPI/AppointmentAPI sample locally (see [docs/VERIFICATION.md](./docs/VERIFICATION.md)).
-- [ ] Configure a real Gemini key and verify an alert marked **AI explanation**.
-- [ ] Run tests and production build.
-- [ ] Push source and lockfile to GitHub. Confirm `.env`, `data/`, `.npm-cache/`, and `node_modules/` are excluded.
-- [ ] Review `docs/AI_PROMPTS.md`, append every later AI prompt used, and run `npm.cmd run prompts` to regenerate `AI_Prompts.docx`.
-- [ ] Record a 5–10 minute video using `docs/DEMO_WALKTHROUGH.md`.
-- [ ] Upload video and `AI_Prompts.docx` to Drive and verify intended link-sharing access.
-- [ ] Email the repository link and Drive link together. Confirm the exact deadline time/timezone with the assignment email.
-
-The document generator records visible user prompts and the exact runtime system prompt plus its JSON input structure. It does not claim to include prompts from other conversations; add those yourself if applicable. GitHub publishing, Drive upload, the video recording, and email submission are not performed by this application.
-
 ## Official references
 
 - [Express 5 promise/error handling](https://expressjs.com/en/guide/migrating-5/)
